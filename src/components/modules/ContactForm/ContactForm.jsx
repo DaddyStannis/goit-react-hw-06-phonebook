@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styles from './contact-form.module.css';
 import NumberField from './NumberField/NumberField';
 import NameField from './NameField/NameField';
@@ -32,3 +33,7 @@ const ContactForm = ({ onSubmit }) => {
 };
 
 export default ContactForm;
+
+ContactForm.propTypes = {
+  onSubmit: PropTypes.func,
+};

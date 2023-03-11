@@ -4,9 +4,9 @@ import ContactList from './modules/ContactList/ContactList';
 import { nanoid } from 'nanoid';
 import { useCallback, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getFilter, getContacts } from './shared/redux/selectors';
-import { addContact, deleteContact } from './shared/redux/contactsSlice';
-import { setFilter } from './shared/redux/filterSlice';
+import { getFilter, getContacts } from 'redux/selectors';
+import { addContact, deleteContact } from 'redux/contactsSlice';
+import { setFilter } from 'redux/filterSlice';
 
 function isDublicate(name, contacts) {
   const normalizedName = name.toLowerCase();
